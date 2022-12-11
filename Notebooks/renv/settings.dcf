@@ -1,0 +1,14 @@
+bioconductor.version:
+external.libraries:
+    /Workspace/Repos/Stephen.Charlesworth@milliman.com/dbricks_demo/Notebooks/renv/library/R-4.1/x86_64-pc-linux-gnu,
+    /local_disk0/.ephemeral_nfs/envs/rEnv-c8a1c13f-d790-494a-bd2d-34d2d7be3d83,
+    /databricks/spark/R/lib, /local_disk0/.ephemeral_nfs/cluster_libraries/r,
+    /usr/local/lib/R/site-library, /usr/lib/R/site-library, /usr/lib/R/library
+ignored.packages:
+package.dependency.fields: Imports, Depends, LinkingTo
+r.version:
+snapshot.type: all
+use.cache: TRUE
+vcs.ignore.cellar: TRUE
+vcs.ignore.library: TRUE
+vcs.ignore.local: TRUE
