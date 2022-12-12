@@ -2410,21 +2410,6 @@
       "Hash": "458bb38374d73bf83b1bb85e353da200",
       "Requirements": []
     },
-    "yardstick": {
-      "Package": "yardstick",
-      "Version": "1.1.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "dccdce88dc8bcc4bcf091742496d6ddd",
-      "Requirements": [
-        "dplyr",
-        "generics",
-        "hardhat",
-        "rlang",
-        "tidyselect",
-        "vctrs"
-      ]
-    },
     "zip": {
       "Package": "zip",
       "Version": "2.2.0",

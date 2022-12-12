@@ -1,4 +1,10 @@
 # Databricks notebook source
+# verify things are pointing the right place
+Sys.getenv("RENV_PATHS_CACHE")
+
+
+# COMMAND ----------
+
 # Get rolling
 renv::init(settings = list(external.libraries=.libPaths()))
 
@@ -11,13 +17,17 @@ renv::settings$snapshot.type("all")
 
 # COMMAND ----------
 
-renv::install('A3')
+renv::install('xgboost')
 
 # COMMAND ----------
 
-library(A3)
+library(xgboost)
 
 
 # COMMAND ----------
 
-renv::snapshot(lockfile="/dbfs/SDC_Tests/renv.lock", force=TRUE)
+# below is from Databricks docs, but don't need if using repos
+#renv::snapshot(lockfile="/dbfs/SDC_Tests/renv.lock", force=TRUE)
+
+# force sounds bad, but just means skip 'are you sure?'
+renv::snapshot(force=TRUE)
